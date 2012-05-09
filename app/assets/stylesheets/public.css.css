@@ -1,0 +1,114 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	width: 100%;
+	min-width: 70em;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font: 1em Verdana,Lucida,Arial,Helvetica,sans-serif;
+	color: #332318;
+}
+ 
+p, td, ul, ol, li, dl, dt, dd {
+	font-family:Verdana,Lucida,Arial,Helvetica,sans-serif;
+}
+
+img {
+	border: none;
+}
+
+table tr th, table tr td {
+	vertical-align:top;
+	text-align:left;
+	padding: 0.2em;
+}
+
+a, a:visited {
+	color: #993120;
+}
+
+a:hover {}
+
+.clear{
+	clear: both;
+}
+.center{
+	text-align:center;
+}
+
+/*Structure*/
+#header {
+	height: 4em;
+	padding-top: 1em;
+	text-align: center;
+	background: #993210;
+	color: #FFFFFF;
+}
+
+#header h1 {
+	margin: 0;
+	padding: 0;
+}
+
+#main {
+	min-height:40em;
+	background: #F2DC87;
+}
+
+#navigation {
+	float: left;
+	width:12em;
+	min-height:36em;
+	padding:1em;
+	background: #94B26F;
+	color: #4C2516;
+}
+
+#content {
+	float: left;
+	padding: 1em;
+}
+
+#footer {
+	clear: both;
+	height: 2.5em;
+	text-align: right;
+	background: #4C2516;
+	color: #F2DC87;
+}
+
+/*Navigation*/
+#navigation ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#navigation ul li {
+	margin-bottom: 0.5em;
+}
+
+#navigation ul ul {
+	margin: 0.5em 0 0 1em;
+	font-size: 0.9em;
+}
+
+#navigation a {
+	text-decoration:none;
+	padding: 0.1em 0.2em;
+}
+
+#navigation a:hover {
+	background: #F2DC87;
+}
+
+/*Content*/
+
+#content h2 {
+	color: #4C2516;
+}
+

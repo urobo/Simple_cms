@@ -1,0 +1,198 @@
+/* Admin stylesheet */
+/* loads after public.css */
+
+/* Structure */
+
+#content {
+	padding-left: 8em;
+	padding-right: 8em;
+}
+
+#content h2 {
+	width: 60em;
+	text-align: center;
+}
+
+.login form{
+	margin: 8em 20em;
+}
+
+.menu .identity {
+	text-align: center;
+}
+
+menu ul {
+	margin: 3em 20em;
+}
+
+menu ul li{
+	margin-bottom:1em;
+}
+
+a {
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+/* large action buttons */
+
+a.action {
+	float: right;
+	padding: 0.1em 0.3em;
+	margin: 0 0 1em 1em;
+	background: #94B26F;
+	color: #4C2516;
+	border: 0.1em solid #4C2516;
+	text-decoration: none;
+	font-size:0.8em;
+	text-align: center;
+}
+
+a.action:hover {
+	background:#B6D491;
+}
+
+/* small action buttons */
+
+.actions {
+	width: 15em;
+}
+
+.actions a.action {
+	float: left;
+	min-width:3.5em;
+	padding: 0.1em 0.2em;
+	margin: 0.1em 0.5em;
+	font-size: 0.7em;
+}
+
+/* CRUD */
+
+.notice {
+	height:1.25em;
+	padding: 0.5em;
+	text-align:center;
+	background: #B6D491
+	color: #4C2516;
+}
+
+.back-link{
+	font-size: 0.8em;
+	margin-bottom: 1em;
+}
+
+.form-buttons {
+	text-align: center;
+	margin: 1em 0;
+}
+
+.list table {
+	clear: both;
+	width:100%;
+}
+
+.list table tr td {
+	border: 0.1em solid #666666;
+}
+
+.show table {
+	clear: both;
+	margin: 0 18em;
+	width: 25em;
+}
+
+.show table.wide {
+	width: 600px; 
+	margin: 0 18em;
+}
+
+.show table tr th {
+	white-space: nowrap;
+	padding-right: 0.3em;
+}
+
+.show table tr td {
+	border: 0.1em solid #666666;
+}
+
+edit table, .new table {
+	margin: 0 auto;
+}
+
+.odd {
+	background: #E5CE69;
+}
+
+.even {
+	background: none;
+}
+
+.section + .section {
+	padding-top: 0.5em;
+	margin-top: 0.5em;
+	border-top: 0.1em dotted #666666;
+}
+
+span.status {
+	display: block;
+	width:0.8em;
+	height:0.8em;
+	margin: 0.25em auto;
+	padding: 0;
+	border:0.1em solid #000000;
+}
+
+span.status.true{
+	background: green;
+	color: green;
+}
+
+span.status.false{
+	background:red;
+	color: red;
+}
+
+
+/* Errors */
+.fieldWithErrors {
+	display: table;
+	padding: 0.2em;
+	background-color: #AA0000;
+}
+
+#errorExplanation {
+	width: 36em;
+	padding: 0;
+	margin: 0 auto 1.5em;
+	border: 0.1em solid #AA0000;
+	background-color: #FFFFFF;
+	font-size: 0.8em;
+
+}
+
+#errorExplanation h2 {
+	font-weight:bold;
+	font-size:0.8em;
+	padding: 0.3em 0.3em 0.3em 1em;
+	margin: 0;
+	width: 30em;
+	background-color:#AA0000;
+	color:#FFFFFF;
+}
+
+#errorExplanation p {
+	color: #333333;
+	margin: 0;
+	padding: 0.3em 0.5em;
+}
+
+#errorExplanation ul {
+	margin-top: 0;
+}
+
+#errorExplanation ul li {
+	list-style:square;
+}
