@@ -4,6 +4,7 @@ class PagesController < ApplicationController
 
 	before_filter :confirm_logged_in
 	before_filter :find_subject
+
 	def index
 		list
 		render('list')
@@ -62,8 +63,9 @@ class PagesController < ApplicationController
 
 	private
 	def find_subject
-		if params[:id]
+		if params[:subject_id]
 			@subject = Subject.find_by_id(params[:subject_id])
+		end
 	end
 
 end
