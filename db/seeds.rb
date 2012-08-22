@@ -33,7 +33,7 @@ params = {:first_section => {:name => "first section", :position => 1, :content_
 			:second_section => {:name => "second section", :position => 2, :content_type => "text" , :content=> "dolor sit amet", :visible => true},
 			:third_section => {:name => "third section", :position => 3, :content_type => "text", :content=> "consectetur adipiscing elit", :visible => false}}
 
-params.keys.each do |key|
+params.keys.each dolor |key|
 	section = Section.new
 	section.update_attributes(params[key])
 end

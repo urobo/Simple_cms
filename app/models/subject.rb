@@ -1,4 +1,6 @@
+require 'lib/position_mover'
 class Subject < ActiveRecord::Base
+	include PositionMover
 	has_many :pages
 
 	validates_presence_of :name

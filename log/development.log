@@ -28914,3 +28914,368 @@ Served asset /application.js - 304 Not Modified (1ms)
 
 Started GET "/assets/rails.png" for 127.0.0.1 at 2012-05-21 18:21:32 +0200
 Served asset /rails.png - 304 Not Modified (0ms)
+  [1m[36m (0.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateSubjects (20120312155018)
+Migrating to CreateSections (20120312155025)
+Migrating to CreatePages (20120312155031)
+Migrating to CreateUsers (20120312155036)
+Migrating to CreateSectionEdits (20120313150411)
+Migrating to CreateAdminUsersPagesJoin (20120313152136)
+Migrating to SectionFixes (20120328144412)
+Migrating to CreateAdminUsers (20120503131833)
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/ac" for 127.0.0.1 at 2012-08-19 18:40:26 +0200
+
+ActionController::RoutingError (No route matches [GET] "/ac"):
+  railties/ruby/1.9.1/gems/actionpack-3.2.2/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  railties/ruby/1.9.1/gems/actionpack-3.2.2/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties/ruby/1.9.1/gems/railties-3.2.2/lib/rails/rack/logger.rb:26:in `call_app'
+  railties/ruby/1.9.1/gems/railties-3.2.2/lib/rails/rack/logger.rb:16:in `call'
+  railties/ruby/1.9.1/gems/actionpack-3.2.2/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  railties/ruby/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+  railties/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  railties/ruby/1.9.1/gems/activesupport-3.2.2/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  railties/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  railties/ruby/1.9.1/gems/actionpack-3.2.2/lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties/ruby/1.9.1/gems/railties-3.2.2/lib/rails/engine.rb:479:in `call'
+  railties/ruby/1.9.1/gems/railties-3.2.2/lib/rails/application.rb:220:in `call'
+  railties/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  railties/ruby/1.9.1/gems/railties-3.2.2/lib/rails/rack/log_tailer.rb:14:in `call'
+  railties/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered railties/ruby/1.9.1/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (11.4ms)
+
+
+Started GET "/access" for 127.0.0.1 at 2012-08-19 18:40:30 +0200
+Processing by AccessController#index as HTML
+Redirected to http://127.0.0.1:3000/access/login
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for 127.0.0.1 at 2012-08-19 18:40:30 +0200
+Processing by AccessController#login as HTML
+  Rendered access/login.html.erb within layouts/admin (1.1ms)
+Compiled partial_lol.js  (147ms)  (pid 3944)
+Compiled application.js  (156ms)  (pid 3944)
+Completed 200 OK in 191ms (Views: 190.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/public.css.css?body=1" for 127.0.0.1 at 2012-08-19 18:40:30 +0200
+Served asset /public.css.css - 200 OK (1ms)
+
+
+Started GET "/assets/admin.css.css?body=1" for 127.0.0.1 at 2012-08-19 18:40:30 +0200
+Served asset /admin.css.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-19 18:40:30 +0200
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-19 18:40:30 +0200
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-08-19 18:40:30 +0200
+Served asset /demo.js - 200 OK (0ms)
+
+
+Started GET "/assets/admin_users.js?body=1" for 127.0.0.1 at 2012-08-19 18:40:30 +0200
+Served asset /admin_users.js - 200 OK (14ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2012-08-19 18:40:30 +0200
+Served asset /access.js - 200 OK (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-08-19 18:40:30 +0200
+Served asset /pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/partial_lol.js?body=1" for 127.0.0.1 at 2012-08-19 18:40:30 +0200
+Served asset /partial_lol.js - 200 OK (0ms)
+
+
+Started GET "/assets/sections.js?body=1" for 127.0.0.1 at 2012-08-19 18:40:30 +0200
+Served asset /sections.js - 200 OK (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-08-19 18:40:30 +0200
+Served asset /subjects.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-19 18:40:30 +0200
+Served asset /application.js - 200 OK (6ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-08-19 18:40:30 +0200
+Served asset /rails.png - 200 OK (1ms)
+
+
+Started POST "/access/attempt_login" for 127.0.0.1 at 2012-08-19 18:44:17 +0200
+Processing by AccessController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q+QzUvgJN63ArecSwn21nX6hN4eQtXuQHnRfTR8dc4E=", "username"=>"ouroboros", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`username` = 'ouroboros' LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/admin
+Completed 302 Found in 70ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-19 18:44:17 +0200
+Processing by AccessController#menu as HTML
+  Rendered access/menu.html.erb within layouts/admin (0.9ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-19 18:44:18 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2012-08-19 18:44:20 +0200
+Processing by SubjectsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `subjects` 
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 2[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 3
+  Rendered subjects/list.html.erb within layouts/admin (46.6ms)
+Completed 200 OK in 54ms (Views: 50.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-19 18:44:20 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages/list?subject_id=1" for 127.0.0.1 at 2012-08-19 18:44:25 +0200
+Processing by PagesController#list as HTML
+  Parameters: {"subject_id"=>"1"}
+  [1m[36mSubject Load (0.6ms)[0m  [1mSELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 1
+  [1m[36mPage Load (0.8ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`subject_id` = 1 ORDER BY pages.position ASC[0m
+  Rendered pages/list.html.erb within layouts/admin (20.2ms)
+Completed 200 OK in 31ms (Views: 27.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-19 18:44:25 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages/new?subject_id=1" for 127.0.0.1 at 2012-08-19 18:44:28 +0200
+Processing by PagesController#new as HTML
+  Parameters: {"subject_id"=>"1"}
+  [1m[35mSubject Load (0.2ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM `pages` [0m
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered pages/_form.html.erb (10.0ms)
+  Rendered pages/new.html.erb within layouts/admin (18.8ms)
+Completed 200 OK in 30ms (Views: 23.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-19 18:44:28 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/pages/create?subject_id=1" for 127.0.0.1 at 2012-08-19 18:45:42 +0200
+Processing by PagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q+QzUvgJN63ArecSwn21nX6hN4eQtXuQHnRfTR8dc4E=", "page"=>{"subject_id"=>"1", "name"=>"first_page_1", "position"=>"1", "visible"=>"1", "permalink"=>"default"}, "commit"=>"Create Page", "subject_id"=>"1"}
+  [1m[35mSubject Load (0.1ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPage Exists (0.3ms)[0m  SELECT 1 FROM `pages` WHERE `pages`.`permalink` = BINARY 'default' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `pages` (`created_at`, `name`, `permalink`, `position`, `subject_id`, `updated_at`, `visible`) VALUES ('2012-08-19 16:45:43', 'first_page_1', 'default', 1, 1, '2012-08-19 16:45:43', 1)[0m
+  [1m[35m (3.8ms)[0m  COMMIT
+Redirected to http://127.0.0.1:3000/pages/list?subject_id=1
+Completed 302 Found in 33ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/pages/list?subject_id=1" for 127.0.0.1 at 2012-08-19 18:45:43 +0200
+Processing by PagesController#list as HTML
+  Parameters: {"subject_id"=>"1"}
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 1
+  [1m[36mPage Load (0.7ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`subject_id` = 1 ORDER BY pages.position ASC[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 4
+  Rendered pages/list.html.erb within layouts/admin (20.9ms)
+Completed 200 OK in 28ms (Views: 21.8ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-19 18:45:43 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/subjects/list" for 127.0.0.1 at 2012-08-19 18:45:46 +0200
+Processing by SubjectsController#list as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `subjects` [0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 2
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 3[0m
+  Rendered subjects/list.html.erb within layouts/admin (7.7ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-19 18:45:46 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages/list?subject_id=2" for 127.0.0.1 at 2012-08-19 18:45:48 +0200
+Processing by PagesController#list as HTML
+  Parameters: {"subject_id"=>"2"}
+  [1m[35mSubject Load (0.2ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 2[0m
+  [1m[35mPage Load (0.3ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`subject_id` = 2 ORDER BY pages.position ASC
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 1[0m
+  Rendered pages/list.html.erb within layouts/admin (23.4ms)
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-19 18:45:48 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/subjects/list" for 127.0.0.1 at 2012-08-19 18:45:51 +0200
+Processing by SubjectsController#list as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `subjects` 
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 2[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 3
+  Rendered subjects/list.html.erb within layouts/admin (7.5ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-19 18:45:51 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages/list?subject_id=3" for 127.0.0.1 at 2012-08-19 18:45:53 +0200
+Processing by PagesController#list as HTML
+  Parameters: {"subject_id"=>"3"}
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 3
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`subject_id` = 3 ORDER BY pages.position ASC[0m
+  Rendered pages/list.html.erb within layouts/admin (3.8ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-19 18:45:53 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages/new?subject_id=3" for 127.0.0.1 at 2012-08-19 18:45:55 +0200
+Processing by PagesController#new as HTML
+  Parameters: {"subject_id"=>"3"}
+  [1m[35mSubject Load (0.1ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `pages` [0m
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered pages/_form.html.erb (1.7ms)
+  Rendered pages/new.html.erb within layouts/admin (2.7ms)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-19 18:45:55 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/pages/create?subject_id=3" for 127.0.0.1 at 2012-08-19 18:46:59 +0200
+Processing by PagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q+QzUvgJN63ArecSwn21nX6hN4eQtXuQHnRfTR8dc4E=", "page"=>{"subject_id"=>"3", "name"=>"test_page", "position"=>"1", "visible"=>"1", "permalink"=>"default"}, "commit"=>"Create Page", "subject_id"=>"3"}
+  [1m[35mSubject Load (0.3ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mPage Exists (0.6ms)[0m  SELECT 1 FROM `pages` WHERE `pages`.`permalink` = BINARY 'default' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `pages` 
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered pages/_form.html.erb (2.0ms)
+  Rendered pages/new.html.erb within layouts/admin (3.2ms)
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-19 18:46:59 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/pages/create?subject_id=3" for 127.0.0.1 at 2012-08-19 18:47:04 +0200
+Processing by PagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q+QzUvgJN63ArecSwn21nX6hN4eQtXuQHnRfTR8dc4E=", "page"=>{"subject_id"=>"3", "name"=>"test_page", "position"=>"5", "visible"=>"1", "permalink"=>"default"}, "commit"=>"Create Page", "subject_id"=>"3"}
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mPage Exists (0.0ms)[0m  [1mSELECT 1 FROM `pages` WHERE `pages`.`permalink` = BINARY 'default' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` [0m
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered pages/_form.html.erb (19.4ms)
+  Rendered pages/new.html.erb within layouts/admin (21.1ms)
+Completed 200 OK in 29ms (Views: 25.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-19 18:47:04 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/pages/create?subject_id=3" for 127.0.0.1 at 2012-08-19 18:47:06 +0200
+Processing by PagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q+QzUvgJN63ArecSwn21nX6hN4eQtXuQHnRfTR8dc4E=", "page"=>{"subject_id"=>"3", "name"=>"test_page", "position"=>"5", "visible"=>"1", "permalink"=>"default"}, "commit"=>"Create Page", "subject_id"=>"3"}
+  [1m[35mSubject Load (0.2ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPage Exists (0.1ms)[0m  SELECT 1 FROM `pages` WHERE `pages`.`permalink` = BINARY 'default' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `pages` 
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered pages/_form.html.erb (1.9ms)
+  Rendered pages/new.html.erb within layouts/admin (3.0ms)
+Completed 200 OK in 12ms (Views: 7.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-19 18:47:06 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/pages/create?subject_id=3" for 127.0.0.1 at 2012-08-19 18:47:09 +0200
+Processing by PagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q+QzUvgJN63ArecSwn21nX6hN4eQtXuQHnRfTR8dc4E=", "page"=>{"subject_id"=>"3", "name"=>"test_page", "position"=>"4", "visible"=>"1", "permalink"=>"default"}, "commit"=>"Create Page", "subject_id"=>"3"}
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mPage Exists (0.0ms)[0m  [1mSELECT 1 FROM `pages` WHERE `pages`.`permalink` = BINARY 'default' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` [0m
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered pages/_form.html.erb (2.4ms)
+  Rendered pages/new.html.erb within layouts/admin (3.9ms)
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-19 18:47:09 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/pages/create?subject_id=3" for 127.0.0.1 at 2012-08-19 18:47:15 +0200
+Processing by PagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q+QzUvgJN63ArecSwn21nX6hN4eQtXuQHnRfTR8dc4E=", "page"=>{"subject_id"=>"3", "name"=>"test_page", "position"=>"4", "visible"=>"1", "permalink"=>"default_lol"}, "commit"=>"Create Page", "subject_id"=>"3"}
+  [1m[35mSubject Load (0.1ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mPage Exists (0.2ms)[0m  SELECT 1 FROM `pages` WHERE `pages`.`permalink` = BINARY 'default_lol' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `pages` (`created_at`, `name`, `permalink`, `position`, `subject_id`, `updated_at`, `visible`) VALUES ('2012-08-19 16:47:15', 'test_page', 'default_lol', 4, 3, '2012-08-19 16:47:15', 1)[0m
+  [1m[35m (4.4ms)[0m  COMMIT
+Redirected to http://127.0.0.1:3000/pages/list?subject_id=3
+Completed 302 Found in 7ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/pages/list?subject_id=3" for 127.0.0.1 at 2012-08-19 18:47:15 +0200
+Processing by PagesController#list as HTML
+  Parameters: {"subject_id"=>"3"}
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 3
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`subject_id` = 3 ORDER BY pages.position ASC[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 5
+  Rendered pages/list.html.erb within layouts/admin (4.5ms)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-19 18:47:15 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)

@@ -1,0 +1,2 @@
+class PartialLolController < ApplicationController
+end

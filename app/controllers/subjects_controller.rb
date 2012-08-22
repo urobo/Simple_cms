@@ -1,4 +1,4 @@
-class SubjectsController < ApplicationController
+	class SubjectsController < ApplicationController
 	
 	layout 'admin'
 
