@@ -8,5 +8,11 @@ class Subject < ActiveRecord::Base
 
 	scope :visible, where(:visible => true)
 	scope :invisible, where(:visible => false)
+	scope :sorted, order("subjects.position ASC")
 	scope :search, lambda {|query| where(["name LIKE ?", "%#{query}%"])}
+
+	private
+	def position_scope
+		"subjects.subject_id = #{subject_id.to_i}"
+	end
 end

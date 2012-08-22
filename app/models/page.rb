@@ -16,4 +16,9 @@ class Page < ActiveRecord::Base
 	scope :visible, where(:visible => true)
 	scope :invisible, where(:visible => false)
 	scope :sorted, order('pages.position ASC')
+	
+	private
+	def position_scope
+		"pages.subject_id = #{subject_id.to_i}"
+	end
 end

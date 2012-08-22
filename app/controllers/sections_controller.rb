@@ -23,10 +23,13 @@ class SectionsController < ApplicationController
 	end
 
 	def create
+		new_position = params[:section].delete(:position)
+
 		# instantiate a new object using form parameters
 		 @section = Section.new(params[:section])
 		 # save the object
 		 if @section.save
+		 	@section.move_to_position(new_position)
 		 	# if save succeeds, redirect to the list action
 		 	flash[:notice] = "Section Created!"
 		 	redirect_to(:action => 'list')
@@ -44,7 +47,9 @@ class SectionsController < ApplicationController
 
 	def update
 		@section = Section.find(params[:id])
+		new_position = params[:section].delete(:position)
 		if @section.update_attributes(params[:section])
+			@section.move_to_position(new_position)
 			flash[:notice] = "Section Updated!"
 			redirect_to(:action => 'show', :id => @section.id)
 		else
@@ -58,7 +63,9 @@ class SectionsController < ApplicationController
 	end
 
 	def destroy
-		Section.find(params[:id]).destroy
+		section = Section.find(params[:id])
+		section.move_to_position(nil)
+		section.destroy
 		flash[:notice] = "Section Destroyed!"
 		redirect_to(:action => 'list')
 	end

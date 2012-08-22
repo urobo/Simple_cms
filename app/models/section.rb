@@ -17,4 +17,5 @@ class Section < ActiveRecord::Base
 	scope :visible, where(:visible => true)
 	scope :invisible, where(:visible => false)
 	scope :sorted, order("sections.position ASC")
+
 end
